@@ -7,7 +7,7 @@ using namespace std;
 /*
 Formula for changing brightness and contrast is: output_img = input_img*alpha + beta. The values of 
 alpha and beta are responsible for contrast and brightness respectively with contrast being 1.0<= beta <=3.0
-and brightness being 0<= alpha <=100. We use special function convertTo(output_img, -1, alpha, beta).
+and brightness being 0<= alpha <=100. We use special function convertTo(output Mat, -1, alpha, beta).
 */
 void brightness(Mat input_img, double alpha, double beta) {
     

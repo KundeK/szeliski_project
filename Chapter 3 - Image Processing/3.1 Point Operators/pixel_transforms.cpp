@@ -5,7 +5,7 @@ using namespace cv;
 using namespace std;
 
 int main() {
-    Mat img = imread("Pictures/truck.jpg");
+    Mat img = imread("Pictures/truck.jpg", IMREAD_COLOR);
     if(img.empty()) {
         cout << "Failed to read image" << endl;
         return 1;
