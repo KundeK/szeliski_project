@@ -11,6 +11,7 @@ int main() {
         cout << "Failed to read image" << endl;
         return 1;
     }
+    imwrite("Pictures/gray_img.png", img);
     
     /* Applying Histogram Equalization
        By using Histogram Equalization techniques, we enhance contrast by spreading out the most frequent intensity values,
